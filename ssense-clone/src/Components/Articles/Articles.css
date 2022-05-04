@@ -1,0 +1,16 @@
+.dense-container{
+    display: flex;
+    /* width: 9%; */
+    margin: 1.2%;
+}
+.large-articles{
+    flex: 7;
+}
+.medium-articles{
+    flex: 2;
+    margin-left:2% ;
+    margin-right: 2%;
+}
+.small-articles{
+    flex: 3;
+}
