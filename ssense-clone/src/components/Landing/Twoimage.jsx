@@ -34,7 +34,7 @@ const Container = styled.div`
     width:99%;
     // border: 1px solid black;
     display:flex;
-    margin-top: 20px;
+    // margin-top: 10px;
 `
 const product = [{
     img:"https://res.cloudinary.com/ssenseweb/image/upload/w_768,q_90,f_auto,dpr_auto/v1651080120/xzrxkdrws3ypmtlw997z.jpg",
