@@ -1,0 +1,25 @@
+.submenu{
+    padding: 0.5%;
+    margin-left: -2%;
+    min-width: 8vw;
+    max-width: max-content;
+    position: absolute;
+    top: 40px;
+    list-style-type: none;
+    text-align: center;
+    background-color: white;
+    border: 1px solid gray;
+}
+.submenu-items{
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.submenu-items:hover{
+   text-decoration: underline;
+}
+.hideSubmenu{
+    display: none;
+}
