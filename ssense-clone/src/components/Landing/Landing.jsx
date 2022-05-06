@@ -12,7 +12,7 @@ import Threeimage2 from './Threeimage2'
 
 
 const Fourthdiv= styled.div`
-   margin-top:70px;
+   margin-top:40px;
    `
 
 const Sixthdiv = styled.div`
