@@ -16,9 +16,11 @@ const NavbarWrapper = styled.div`
     width:100%;
     padding-top:20px;
     top:0;
-    height: 20px;
+    height: 70px;
     display:flex;
     line-height: normal;
+    position:sticky;
+    background-color:white;
     
     &.wrapper > *{
         flex:1;

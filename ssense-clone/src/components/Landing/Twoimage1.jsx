@@ -23,13 +23,15 @@ const Card1 = styled.div`
 .desc{
     font: lighter normal 1.12rem/1.625rem "JHA Times Now";
     letter-spacing: -0.003125rem;
-    margin-right:62%;
-    margin-bottom:-3%;
-    margin-top:1%;
+    // margin-right:62%;
+    // margin-bottom:-3%;
+    // margin-top:1%;
     color:black;
     border:1px solid grey;
-    border-radius:9%
-
+    border-radius:9px;
+    width:200px;
+    height:30px;
+    margin-left:4%;
 }
 
 `
@@ -44,12 +46,14 @@ const product = [{
     category:"Featured",
     name:"ACNE STUDIOS",
     description:"SHOP MENSWEAR",
+    id:1
 },
 {
     img:"https://res.cloudinary.com/ssenseweb/image/upload/w_768,q_90,f_auto,dpr_auto/v1651497471/jmwoeqxzweraasxvikv7.jpg",
     category:"Featured",
     name:"ACNE STUDIOS",
     description:"SHOP WOMENSWEAR", 
+    id:2
 }]
 
 
@@ -57,7 +61,7 @@ const Twoimage1 = (props) => {
     return (
         <Container>
            {product.map((elem)=>{ return (
-               <Card1>
+               <Card1 key={elem.id}>
                    <div>
                        <img src={elem.img}/>
                     </div>

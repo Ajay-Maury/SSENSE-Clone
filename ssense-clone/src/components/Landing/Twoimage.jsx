@@ -34,19 +34,21 @@ const Container = styled.div`
     width:99%;
     // border: 1px solid black;
     display:flex;
-    margin-top: 50px;
+    margin-top: 20px;
 `
 const product = [{
     img:"https://res.cloudinary.com/ssenseweb/image/upload/w_768,q_90,f_auto,dpr_auto/v1651080120/xzrxkdrws3ypmtlw997z.jpg",
     category:"Fashion",
     name:"OUR SECRET LIVES THROUGH OBJECTS",
     description:"A Visual Catalog Of Everything Else",
+    id:1
 },
 {
     img:"https://res.cloudinary.com/ssenseweb/image/upload/w_768,q_90,f_auto,dpr_auto/v1650653292/uejok9zomnxkplf2b9go.jpg",
     category:"Market",
     name:"POCKETS, PLEASE !",
-    description:"With Lemaire, Dries Van Noten, and Pushbutton", 
+    description:"With Lemaire, Dries Van Noten, and Pushbutton",
+    id:2 
 }]
 
 
@@ -55,7 +57,7 @@ const Twoimage = (props) => {
         <Container>
            {/* <h1>Twoimage</h1>  */}
            {product.map((elem)=>{ return (
-               <Card1>
+               <Card1 key={elem.id}>
                    <div>
                        <img src={elem.img}/>
                     </div>

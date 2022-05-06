@@ -41,18 +41,21 @@ const product = [{
     category:"RECENT",
     name:"HAIR AND HIGHER POWER WITH JAWARA WAUCHOPE",
     description:"Fashion | Apr 21",
+    id:1
 },
 {
     img:"https://res.cloudinary.com/ssenseweb/image/upload/w_480,q_90,f_auto,dpr_auto/v1649855761/ppbhaz8aoqykgmmxcv1e.jpg",
     category:"RECENT",
     name:"THE MOON IS LATE",
     description:"Culture | Apr 18", 
+    id:2
 },
 {
     img:"https://res.cloudinary.com/ssenseweb/image/upload/w_480,q_90,f_auto,dpr_auto/v1649856548/gybenblahd5neaqr4auz.jpg",
     category:"RECENT",
     name:"FLOWER TIME",
-    description:"Market | Apr 14", 
+    description:"Market | Apr 14",
+    id:3 
 }]
 
 
@@ -61,7 +64,7 @@ const Threeimage = (props) => {
         <Container>
            {/* <h1>Twoimage</h1>  */}
            {product.map((elem)=>{ return (
-               <Card1>
+               <Card1 key={elem.id}>
                    <div className='image'>
                        <img src={elem.img} width="90%" height="95%"/>
                     </div>
