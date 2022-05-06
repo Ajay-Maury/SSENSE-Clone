@@ -22,7 +22,7 @@ const LagreArticleGallery = () => {
     <div>
       <div className="large-articles">
         {data.map((d) => (
-          <LargeArticle
+          <LargeArticle key={d.id}
             img={d.img}
             heading={d.heading}
             category={d.category}

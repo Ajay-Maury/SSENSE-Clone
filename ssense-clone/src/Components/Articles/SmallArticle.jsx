@@ -13,6 +13,7 @@ const SmallArticle = (props) => {
           <Label style={{ marginTop: "20%" }} >{props.category}</Label>
         </div>
       </div>
+      <hr/>
     </>
   );
 }

@@ -33,10 +33,9 @@ const SmallArticleGallery = () => {
     <div>
       <hr />
       {data.map((d) => (
-        <>
-          <SmallArticle img={d.img} heading={d.heading} category={d.category} />
-          <hr />
-        </>
+        
+          <SmallArticle key={d.id} img={d.img} heading={d.heading} category={d.category} />
+       
       ))}
     </div>
   );
