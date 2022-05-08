@@ -2,9 +2,11 @@
     display: flex;
     /* width: 9%; */
     margin: 1.2%;
+    border:1px solid red;
 }
 .large-articles{
     flex: 7;
+    border: 1px solid red;
 }
 .medium-articles{
     flex: 2;

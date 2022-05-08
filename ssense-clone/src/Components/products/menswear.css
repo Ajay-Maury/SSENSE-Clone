@@ -1,242 +1,94 @@
-.whole {
-    margin-left: 50px;
-    margin-right: 50px;
-    /* border:1px solid red; */
-    display: flex;
-    margin-top: 70px;
-}
-.s-text{
-    font-family: "Favorit SSENSE Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-.plp-left-nav__designers--wrapper{
-    -webkit-text-size-adjust: 100%;
-    --sa-uid: '0-c252fdf0-7456-464f-6e01-c6137f5d682b';
-    font-weight: 400;
-    color: #000;
-    font-size: 11px;
-    line-height: 15px;
-    text-rendering: optimizeLegibility;
-    font-family: "Favorit SSENSE Inter";
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    margin: 0;
-    padding: 0;
-    display: block;
-    margin-top: 30px;
-}
-
-
-.right{
-    /* border: 1px solid red; */
-    width:16.6%
-}
-.middle{
-    /* border: 1px solid black; */
-    width:66.6%;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-}
-.left{
-    width: 16.6%;
-}
-.designer-list{
-    -webkit-text-size-adjust: 100%;
-    --sa-uid: '0-c252fdf0-7456-464f-6e01-c6137f5d682b';
-    font-weight: 400;
-    color: #000;
-    font-size: 11px;
-    line-height: 15px;
-    text-rendering: optimizeLegibility;
-    font-family: "Favorit SSENSE Inter";
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: left;
-}
-.designer-left{
-    -webkit-text-size-adjust: 100%;
-    --sa-uid: '0-c252fdf0-7456-464f-6e01-c6137f5d682b';
-    font-weight: 400;
-    color: #000;
-    font-size: 11px;
-    line-height: 15px;
-    text-rendering: optimizeLegibility;
-    font-family: "Favorit SSENSE Inter";
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: left;
-}
-.plp-menu-level__list-title{
-    -webkit-text-size-adjust: 100%;
-    --sa-uid: '0-c252fdf0-7456-464f-6e01-c6137f5d682b';
-    font-weight: 400;
-    color: #000;
-    font-size: 11px;
-    text-rendering: optimizeLegibility;
-    font-family: "Favorit SSENSE Inter";
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    line-height: 15px;
-    margin-bottom: 2px;
-}
-img{
-    -webkit-text-size-adjust: 100%;
-    --sa-uid: '0-c252fdf0-7456-464f-6e01-c6137f5d682b';
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 15px;
-    text-rendering: optimizeLegibility;
-    font-family: "Favorit SSENSE Inter";
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    color: #000;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    max-width: 100%;
-    border-style: none;
-    display: block;
-    position: relative;
-    margin-bottom: 15px;
-}
-.product-title_description{
-    -webkit-text-size-adjust: 100%;
-    --sa-uid: '0-25f00dda-f2b7-4a9e-43ed-0b05092359eb';
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 15px;
-    text-rendering: optimizeLegibility;
-    font-family: "Favorit SSENSE Inter";
-    color: #000;
-    margin: 0;
-    padding: 0;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    text-align: left;
-    margin-top: 10px;
-    padding-right: 8px;
-    margin-left: 35px;
-}
-p{
-    margin-top: -10px;
-}
-.accordion-links-right-nav__list{
-    -webkit-text-size-adjust: 100%;
-    --sa-uid: '0-25f00dda-f2b7-4a9e-43ed-0b05092359eb';
-    font-weight: 400;
-    color: #000;
-    font-size: 11px;
-    line-height: 15px;
-    text-rendering: optimizeLegibility;
-    font-family: "Favorit SSENSE Inter";
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    list-style-type: none;
-    margin: 8px 0 0 0;
-    padding: 0;
-    text-align: right;
-}
-button{
-    -webkit-text-size-adjust: 100%;
-    --sa-uid: '0-25f00dda-f2b7-4a9e-43ed-0b05092359eb';
-    color: inherit;
-    font: inherit;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0;
-    overflow: visible;
-    text-transform: none;
-    -webkit-appearance: button;
-    font-family: "Favorit SSENSE Inter";
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: 0;
-    border: 0;
-    outline: 0;
-    padding: 0;
+.menswear-container{
     width: 100%;
-    cursor: default;
-}
-.s-text{
-    -webkit-text-size-adjust: 100%;
-    --sa-uid: '0-25f00dda-f2b7-4a9e-43ed-0b05092359eb';
-    text-rendering: optimizeLegibility;
-    list-style-type: none;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    margin: 0;
-    padding: 0;
-    font-family: "Favorit SSENSE Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: .09px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    color: #000;
-}
-.plp-right-nav__sort--wrapper{
-    -webkit-text-size-adjust: 100%;
-    --sa-uid: '0-25f00dda-f2b7-4a9e-43ed-0b05092359eb';
-    font-weight: 400;
-    color: #000;
-    font-size: 11px;
-    line-height: 15px;
-    text-rendering: optimizeLegibility;
-    font-family: "Favorit SSENSE Inter";
-    margin: 0;
-    padding: 0;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    height: auto;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: flex-start;
-    margin-bottom: 35px;
+    margin-top: 50px;
+    ;
 }
-.plp-right-nav__nav{
-    -webkit-text-size-adjust: 100%;
-    --sa-uid: '0-25f00dda-f2b7-4a9e-43ed-0b05092359eb';
+.mens-category{
+    width: 12%;
+    height: auto;
+    /* border: 1px solid rgb(12, 12, 12) */
+
+}
+.mens-category-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
     font-weight: 400;
-    color: #000;
-    font-size: 11px;
-    line-height: 15px;
-    text-rendering: optimizeLegibility;
-    font-family: "Favorit SSENSE Inter";
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    margin: 0;
-    padding: 0;
-    display: block;
-    min-width: 90px;
+
+}
+.mens-category-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    
+
+    
+}
+.mens-data{
+    width: 76%;
+    height: 100%;
+    display: grid;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-columns: repeat(3, 35%);
+    grid-gap: 20px;
+    
+   
+
+    /*border: 1px solid rgb(12, 12, 12) */
 }
 
-.accordion-links-right-nav__list{
-    -webkit-text-size-adjust: 100%;
-    --sa-uid: '0-25f00dda-f2b7-4a9e-43ed-0b05092359eb';
+.menimage{
+    width: 60%;
+    height: 60%;
+    margin-left: 30px;
+    /* border: 1px solid rgb(12, 12, 12) */
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
     font-weight: 400;
-    color: #000;
-    font-size: 11px;
-    line-height: 15px;
-    text-rendering: optimizeLegibility;
-    font-family: "Favorit SSENSE Inter";
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    list-style-type: none;
-    margin: 8px 0 0 0;
-    padding: 0;
-    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: -8px;
+    text-decoration: none;
+    color: rgb(46, 46, 46);
     text-align: left;
-}
-.header{
-    font-weight: bold;
-    font-family:sans-serif;
-    font-size:small;
-    text-decoration-style:title ;
 
+    /* border: 1px solid rgb(12, 12, 12) */
 }
-.lefttop{
-    /* border: 1px solid black; */
-    width: 45%;
-    margin-left: 55%;
-    margin-bottom: 50px;
+p:hover{
+    /* text-decoration: underline; */
+    cursor: pointer;
+}
+.mens-sort{
+    width: 12%;
+    height: auto;
+    /* border: 1px solid rgb(12, 12, 12) */
 }
 
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 6px;
+    margin-top: 0px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+.uderline{
+    text-decoration: underline;
+}
+ul:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

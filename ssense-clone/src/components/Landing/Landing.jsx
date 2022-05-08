@@ -12,8 +12,16 @@ import Threeimage2 from './Threeimage2'
 
 
 const Fourthdiv= styled.div`
-   margin-top:40px;
+   margin-top:1%;
+   border:1px solid red;
+   img{
+    height:95%;
+    width:95%;
+ 
+    
+}
    `
+
 
 const Sixthdiv = styled.div`
    margin-top:70px;
@@ -45,11 +53,12 @@ const Sixthdiv = styled.div`
 const Landing = (props) => {
     return (
         <div>
+          
             <Twoimage/>
             <Threeimage/>
             <Twoimage1/>
             <Fourthdiv >
-            <img src="https://res.cloudinary.com/ssenseweb/image/upload/w_1280,q_90,f_auto,dpr_auto/v1651607142/chawdetcbaoy3mftfqca.gif"/>
+            <img src="https://res.cloudinary.com/ssenseweb/image/upload/w_1280,q_90,f_auto,dpr_auto/v1651607142/chawdetcbaoy3mftfqca.gif" />
             </Fourthdiv>
             <Articles/>
             <Twoimage2/>
