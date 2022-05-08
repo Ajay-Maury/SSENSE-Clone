@@ -13,7 +13,6 @@ import Threeimage2 from './Threeimage2'
 
 const Fourthdiv= styled.div`
    margin-top:1%;
-   border:1px solid red;
    img{
     height:95%;
     width:95%;
@@ -24,10 +23,10 @@ const Fourthdiv= styled.div`
 
 
 const Sixthdiv = styled.div`
-   margin-top:70px;
+   
    font: lighter normal 2.453125rem/2.75rem "Favorit SSENSE Inter1";
    letter-spacing: -0.1575rem;
-   margin: 0 1.875rem 1.875rem 1.875rem;
+   margin: 1.5% 1.875rem 1.875rem 1.875rem;
 
    .link{
     font: lighter normal 1.01rem/1.625rem "JHA Times Now";
@@ -38,7 +37,7 @@ const Sixthdiv = styled.div`
     padding:1%;
     width:100px;
     height:20px;
-    margin:auto;
+    margin: 1.5% auto;
    }
    `
 

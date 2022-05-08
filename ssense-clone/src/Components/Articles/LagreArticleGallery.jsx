@@ -20,7 +20,7 @@ const LagreArticleGallery = () => {
   ];
   return (
     <div>
-      <div className="large-articles">
+      <div className="large-articles1">
         {data.map((d) => (
           <LargeArticle key={d.id}
             img={d.img}

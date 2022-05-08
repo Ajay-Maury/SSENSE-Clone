@@ -4,13 +4,13 @@ import styled from 'styled-components'
 const Card1 = styled.div`
 display:flex;
 flex-direction:column;
-border:1px solid red;
+
 img{
     height:95%;
     width:90%;
 }
 .category {
- border: 1px solid black;
+
  display:flex;
  gap:5%;
  margin-left:5%;
@@ -30,7 +30,7 @@ img{
     margin-top:1%;
     color:black;
     border:1px solid grey;
-    border:1px solid black;
+
     border-radius:9px;
     width:200px;
     height:30px;

@@ -5,11 +5,14 @@ import styled, { StyledComponent } from "styled-components";
 const Wrapper  = styled.div`
 display:flex;
 flex-direction:column;
+flex:1;
+margin: 0.5% 2.5%;
 
 `
 
 const MainDiv = styled.div`
 display:flex
+
 `
 const EightdivGallery = () => {
   const data = [

@@ -96,7 +96,7 @@ export const Footer = () => {
     },
   ];
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer-conatiner">
         <div className="footer-up">
           <div className="textLinks">
@@ -122,7 +122,7 @@ export const Footer = () => {
           ))}
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

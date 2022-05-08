@@ -9,7 +9,7 @@ import {Menswear } from "../products/menswear";
 import { Womenswear } from "../products/Womenswears";
 import Landing from "../Landing/Landing";
 // import {Everything} from "../products/everything"
-
+import Footer  from '../Footer/Footer';
  const Navbar = () => {
 const [click, setClick] =useState(false);
 
@@ -42,7 +42,7 @@ const handelClick =()=>setClick(!click);
         </Link>
             </li>
             <li className='right_of_navbar'>
-            <Link to='/language'  className='link' id='language'>
+            <Link to='/'  className='link' id='language'>
                <span>ENGLISH</span>
                 <ul className='drop_down'>
                         <li>
@@ -79,8 +79,9 @@ const handelClick =()=>setClick(!click);
 
 
        </Routes>
+       <Footer/>
     </nav>
-    
+  
     </>
   )
 }

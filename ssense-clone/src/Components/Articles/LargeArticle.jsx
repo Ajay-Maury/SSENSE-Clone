@@ -3,14 +3,14 @@ import { Label } from "../StyledComponents/Label";
 
 const LargeArticle = (props) => {
   return (
-    <div style={{display:"flex" ,margin:"2%"}}>
+    <div style={{display:"flex"}}>
       <div style={{flex:1}}>
-        <img style={{width:"100%"}} src={props.img} alt="" />
+        <img style={{width:"100%", height:"100%"}} src={props.img} alt="" />
       </div>
-      <div style={{ flex: 1, padding:"2%"}}>
-              <h5>{props.heading}</h5>
+      <div style={{ flex: 1, padding:"2%" , textAlign:"left"}}>
+              <h1>{props.heading}</h1>
               <Label >{props.category}</Label >
-        <p style={{margin:"5% auto"}} >{props.text}</p>
+        <p style={{margin:" auto", fontSize:"inherit", marginTop:"20%"}} >{props.text}</p>
         
       </div>
     </div>

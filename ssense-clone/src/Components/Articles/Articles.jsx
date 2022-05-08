@@ -14,16 +14,16 @@ const Articles = () => {
         <div className="medium-articles">
           <div>
             <img
-              style={{ height: "100%", textAlign: "center" }}
+              style={{ height: "140%", width:"100%"  }}
               src="https://res.cloudinary.com/ssenseweb/image/upload/w_0.1,q_40,f_auto,dpr_auto/v1649083432/kon1zled3j9pkniq6omt.jpg"
               alt=""
             />
           </div>
           <div>
-            <h4>
+            <h3>
               Considered Collaboration: Inside the Ahluwalia &PaulSmith
               Collection
-            </h4>
+            </h3>
           </div>
           <Label> FASHION | APR 6</Label>
         </div>

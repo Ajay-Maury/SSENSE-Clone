@@ -8,6 +8,7 @@
   display: grid;
   grid-template-columns:repeat(3,1fr);
   gap: 10px;
+ 
 }
 .Navbar>div{
   border: 1px solid red;
@@ -17,9 +18,10 @@
 .navbar{
   padding: 10px;
   background-color: #ffff;
+  top: 0;
   position: sticky;
-  
-  top:0%;
+  z-index: 1000;
+
 }
 .navbar_list{
   height: auto;
@@ -41,10 +43,11 @@ justify-content: space-evenly;
   display: none;
   position: absolute;
   /* left: 0; */
-  top: 100%;
+  /* top: 100%; */
   border: 1px solid grey;
   padding: 10px;
 } #language:hover>ul{
+  background-color: white;
 display: block;
 }.drop_down li{
   margin-bottom: 5px;

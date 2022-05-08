@@ -2,39 +2,44 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Card1 = styled.div`
-   display:flex;
-   flex-direction:column;
-   .image{
-    height:77%;
-   }
-   .category {
-    // border: 1px solid black;
-    display:flex;
-    gap:5%;
-    margin-left:5%;
+display:flex;
+flex-direction:column;
+
+.image{
+    height:85%;
+}
+img{
+    height:95%;
+    width:90%;
+}
+.category {
+ 
+ display:flex;
+ gap:5%;
+ margin-left:5%;
 }
 .name{
-    font: lighter normal 1.1895rem/1.625rem "Favorit SSENSE Inter1";
-    letter-spacing: -0.015625rem;
-    color:black;
-    
+ font: lighter normal 1.1895rem/1.625rem "Favorit SSENSE Inter1";
+ letter-spacing: -0.015625rem;
+ color:black;
+ text-align: left;
+ 
 }
 .desc{
-    font: lighter normal 1.12rem/1.625rem "JHA Times Now";
+    font: lighter normal 0.72rem/1.625rem "JHA Times Now";
     letter-spacing: -0.003125rem;
-    margin-right:32%;
-    margin-bottom:-3%;
+    margin-left:21%;
+    margin-bottom:3%;
     margin-top:1%;
     color:gray;
 }
 
 `
 const Container = styled.div`
-    width:99%;
-    // border: 1px solid black;
-    display:flex;
-    margin-top: 50px;
-    gap:1%;
+ width:99%;
+ // border: 1px solid black;
+ display:flex;
+ // margin-top: 10px;
 `
 const product = [{
     img:"https://res.cloudinary.com/ssenseweb/image/upload/w_480,q_90,f_auto,dpr_auto/v1648043578/rx9qrqkbfbni3ajifbqh.jpg",
