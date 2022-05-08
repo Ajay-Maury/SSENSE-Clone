@@ -185,6 +185,7 @@ export const Menswear = () => {
                             <p>{e.product}</p>
                             <p>{e.pro_desc}</p>
                             <p>$ {e.price}</p>
+                            <button>Add To Cart</button>
                             </div>
                             )}
                     )}
