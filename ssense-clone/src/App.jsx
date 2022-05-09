@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Landing from "./Components/Landing/Landing";
+import Landing from "./components/Landing/Landing";
 import { Menswear } from "./Components/products/menswear";
 import { Womenswear } from "./Components/products/Womenswears";
 import { Everything } from "./Components/products/everything";
