@@ -2,10 +2,12 @@ import React from 'react'
 import "./menswear.css"
 // import "../App.css"
 
-//import  Link  from 'react-router-dom'
+import  {Link } from 'react-router-dom'
 //import { Route, Routes } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import axios from "axios"
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer'
 
 export const Womenswear = () => {
 
@@ -39,6 +41,7 @@ export const Womenswear = () => {
 
   return (
     <div>
+        <Navbar />
         <div className="menswear-container">
 
             <div className="mens-category">
@@ -181,12 +184,12 @@ export const Womenswear = () => {
                
                     {data.map((e)=>
                         {return (
-                        <div key={e._id} className="mens-data-item">
+                        <Link key={e._id} className="mens-data-item" to={`${e._id}`}>
                             <img src={e.img_url} className="menimage" alt="missing"/>
                             <p>{e.product}</p>
                             <p>{e.pro_desc}</p>
                             <p>$ {e.price}</p>
-                            </div>
+                            </Link>
                             )}
                     )}
                 
@@ -231,7 +234,7 @@ export const Womenswear = () => {
         </div>
 
 
-            
+        <Footer />    
         
     </div>
   )

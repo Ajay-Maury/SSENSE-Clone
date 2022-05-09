@@ -1,15 +1,16 @@
 import "./Navbar.css"
 import React, {useState} from 'react'
  import { Link } from 'react-router-dom';
- import {Routes, Route} from 'react-router-dom'
+//  import {Routes, Route} from 'react-router-dom'
  // import Button from './LeftBar';
 // import './Dropdown';
 // import {Logo} from "./Ssense_logo.svg"
-import {Menswear } from "../products/menswear";
-import { Womenswear } from "../products/Womenswears";
-import Landing from "../Landing/Landing";
+// import {Menswear } from "../products/menswear";
+// import { Womenswear } from "../products/Womenswears";
+// import Landing from "../Landing/Landing";
 // import {Everything} from "../products/everything"
-import Footer  from '../Footer/Footer';
+// import Footer  from '../Footer/Footer';
+// import { useSelector } from "react-redux";
  const Navbar = () => {
 const [click, setClick] =useState(false);
 
@@ -21,16 +22,16 @@ const handelClick =()=>setClick(!click);
 
         <ul className='navbar_list'>
             <li className='left_of_navbar'>
-                <Link to='/mens'  className='link'>
+                <Link to='/menswear'  className='link'>
                     MENSWEAR
                 </Link>
-                <Link to='/womens'  className='link'>
+                <Link to='/womenswear'  className='link'>
                     WOMENSWEAR
                 </Link>
                 <Link to='/everything'  className='link'>
                     EVERYTHINGELSE
                 </Link>
-                <Link to='/search'
+                <Link to='/'
                  className='link'
                  >
                     SEARCH
@@ -57,29 +58,16 @@ const handelClick =()=>setClick(!click);
                 <Link to='/login'  className='link'>
                 LOGIN
                 </Link>
-                <Link to='/wishlist' className='link'>
+                <Link to='/' className='link'>
                 WISHLIST
                 </Link>
-                <Link to='/cart'  className='link'>
-                    SHOPPING BAG {`(0)`}
+                <Link to='/checkout'  className='link'>
+                    SHOPPING BAG
                 </Link>
             </li>
         </ul>
-       <Routes>
-
- <Route path='/mens' element={<Menswear />}/>
- <Route path='/womens' element={<Womenswear />}/>
- {/* <Route path='/everything' element={<Everything />}/> */}
-<Route path='/' element={<Landing />}/>
-
-{/* <Route path='/login' element={Login}/>
-<Route path='/wishlist' element={Wishlist}/>
-<Route path='/cart' element={ShoppingBag}/> */}
-
-
-
-       </Routes>
-       <Footer/>
+       
+      
     </nav>
   
     </>

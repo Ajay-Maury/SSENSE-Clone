@@ -1,13 +1,14 @@
 import React from 'react'
 import "./menswear.css"
 
-//import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 //import { Route, Routes } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import axios from "axios";
-
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 export const Menswear = () => {
-
+ 
     const [data,setData] = useState([])
     useEffect (()=>{
         axios.get("https://ssense-api.herokuapp.com/mensWear").then(({data})=>{
@@ -34,10 +35,12 @@ export const Menswear = () => {
        setData([...data2])
       
     }
+    
    
 
   return (
     <div>
+        <Navbar />
         <div className="menswear-container">
 
             <div className="mens-category">
@@ -180,13 +183,13 @@ export const Menswear = () => {
                
             {data.map((e)=>
                         {return (
-                        <div key={e._id} className="mens-data-item">
+                        <Link key={e._id} className="mens-data-item" to={`${e._id}`}>
                             <img src={e.img_url} className="menimage" alt="missing"/>
                             <p>{e.product}</p>
                             <p>{e.pro_desc}</p>
                             <p>$ {e.price}</p>
-                            <button>Add To Cart</button>
-                            </div>
+                           
+                            </Link>
                             )}
                     )}
                 
@@ -233,7 +236,7 @@ export const Menswear = () => {
         </div>
 
 
-            
+        <Footer />    
         
     </div>
   )

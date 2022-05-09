@@ -9,8 +9,8 @@ import Threeimage1 from './Threeimage1'
 import EightdivGallery from './EightdivGallery'
 import Twoimage3 from './Twoimage3'
 import Threeimage2 from './Threeimage2'
-
-
+import Navbar from '../Navbar/Navbar'
+import Footer from "../Footer/Footer"
 const Fourthdiv= styled.div`
    margin-top:1%;
    img{
@@ -51,6 +51,8 @@ const Sixthdiv = styled.div`
 
 const Landing = (props) => {
     return (
+        <>
+        <Navbar />
         <div>
           
             <Twoimage/>
@@ -74,6 +76,8 @@ const Landing = (props) => {
             <Threeimage2/>
             
         </div>
+        <Footer />
+        </>
     )
 }
 
