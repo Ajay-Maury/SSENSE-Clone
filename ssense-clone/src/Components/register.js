@@ -18,19 +18,19 @@ import { useState } from "react";
 export const Register = () => {
  
   const Navigate = useNavigate();
- 
+  
 
-    const [isLargerThan992] = useMediaQuery("(min-width: 992px)");
+    
   const [user, setUser] = useState({
-    name: "",
-    mobile: "",
+    firstName: "",
+    lastName: "",
     email: "",
     password: "",
   });
 
  
 
-  const onChangeInput = (e) => {
+  const handleChange = (e) => {
     // console.log(e.target)
     const { id, value } = e.target;
     setUser({ ...user, [id]: value });
@@ -38,8 +38,8 @@ export const Register = () => {
   const handleRegister =(e)=>{
   e.preventDefault();
   axios.post("https://ssense-api.herokuapp.com/register",user
-    // name: user.name,
-    // mobilee: user.mobilee,
+    // firstName: user.firstName,
+    // lastName: user.lastName,
     // email: user.email,
     // password: user.password,
   ).then((res)=>{
@@ -47,26 +47,26 @@ export const Register = () => {
       Navigate("/login");
     },3000);
     setUser({
-      name: "",
-      mobile: "",
+      firstName: "",
+      lastName: "",
       email: "",
       password: "",
-    }); 
-       alert("Signup Successfull !!!")
+    });  
+      alert("Signup Successfull !!!")
      
-    
 
   }).catch((e)=>{
     console.log("e",e);
-    alert("pls enter 8 digit password")
+    
+      alert("Please Enter 8 Digit Password")
+     
   })
       
       }
   return (
     <div className="login">
       {console.log("user", user)}
-     
-        
+      
         <Flex
           justify="center"
           align="center"
@@ -77,68 +77,83 @@ export const Register = () => {
         Signup
       </Heading>
       <FormControl
-        w={isLargerThan992 ? "30%" : "70%"}
-        h="420px"
+       w="400px"
+        h="320px"
         margin="auto"
         boxShadow="rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"
-        borderRadius="lg"
+        borderRadius="5px"
         p={"3"}
         cursor="pointer"
+        padding="30px"
         mt={5}
       >
         {/* First name..................... */}
-        <FormLabel htmlFor="text">Name</FormLabel>
+        <FormLabel htmlFor="text">First Name</FormLabel>
         <Input
+        height="30px"
+        width="300px"
+        marginLeft="20%"
           focusBorderColor="RGBA(0, 0, 0, 0.64)"
           id="firstName"
-          type="text"
-          placeholder="Enter a  name"
-          value={user.name}
+          type="email"
+          placeholder="Enter a first name"
+          value={user.firstName}
           onChange={(e) => {
-            onChangeInput(e);
+            handleChange(e);
           }}
         />
         {/* LastName............................ */}
-        <FormLabel htmlFor="text">Mobile</FormLabel>
+        <FormLabel htmlFor="text">Last Name</FormLabel>
         <Input
+        height="30px"
+        width="300px"
+        marginLeft="20%"
           focusBorderColor="RGBA(0, 0, 0, 0.64)"
           id="lastName"
-          type="number"
-          placeholder="Enter mobile"
-          value={user.mobile}
+          type="text"
+          placeholder="Enter a last name"
+          value={user.lastName}
           onChange={(e) => {
-            onChangeInput(e);
+            handleChange(e);
           }}
         />
         {/* Email...................... */}
-        <FormLabel htmlFor="email">Email Adress</FormLabel>
+        <FormLabel htmlFor="email">Email</FormLabel>
         <Input
+        height="30px"
+        width="300px"
+        marginLeft="20%"
           focusBorderColor="RGBA(0, 0, 0, 0.64)"
           id="email"
           type="email"
           placeholder="Enter email"
           value={user.email}
           onChange={(e) => {
-            onChangeInput(e);
+            handleChange(e);
           }}
         />
         {/* Password ................................ */}
-       
+        
         <FormLabel htmlFor="text">Password</FormLabel>
         <Input
+        height="30px"
+        width="300px"
+        marginLeft="20%"
           type="password"
           id="password"
           focusBorderColor="RGBA(0, 0, 0, 0.64)"
           placeholder="Enter 8 digit password"
           value={user.password}
           onChange={(e) => {
-            onChangeInput(e);
+            handleChange(e);
           }}
         />
 
         <Button
           mt="20px"
-          w="100%"
+          height="40px"
+        width="300px"
+   
           borderColor="#ccd0d5"
           colorScheme="RGBA(0, 0, 0, 0.92)"
           _focus={{
@@ -147,7 +162,7 @@ export const Register = () => {
           }}
           transform="scale(0.98)"
           background="#000000"
-          width="200px"
+  
           _hover={{
             bg: "#f5f6f7",
             background: "RGBA(0, 0, 0, 0.80)",
@@ -160,7 +175,7 @@ export const Register = () => {
         </Button>
       </FormControl>
       </Flex>
-     
+    
     </div>
   );
 };

@@ -18,15 +18,16 @@ import { useNavigate } from "react-router-dom";
 
 import { useEffect, useState } from "react";
 export const Login = () => {
-  
+ 
+ 
   const [user, setUser] = useState({
     email: "",
     password: "",
   });
-  const [isLargerThan992] = useMediaQuery("(min-width: 992px)");
+
   // add....................
   const Navigate = useNavigate();
-
+ 
   const dispatch = useDispatch();
 
   const onChangeInput = (e) => {
@@ -54,19 +55,21 @@ export const Login = () => {
           email: "",
           password: "",
         });
-        
+     
+         alert("Login Successfull !!!")
+          
       })
       .catch((e) => {
        
-      alert("Login Failed !!!")
-         
+        alert("Login Failed !!!")
+          
         Navigate("/register");
       });
   };
   return (
     <div className="login">
       { console.log("user",user)}
-      
+    
         <Flex
           justify="center"
           align="center"
@@ -77,18 +80,22 @@ export const Login = () => {
             LogIn
           </Heading>
           <FormControl
-            w={isLargerThan992 ? "30%" : "70%"}
-            h="270px"
+            w="400px"
+            h="220px"
             margin="auto"
             boxShadow="rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"
-            borderRadius="lg"
+            borderRadius="5px"
             p={"3"}
             cursor="pointer"
+            padding="30px"
             mt={5}
           >
             {/* Email...................... */}
             <FormLabel htmlFor="email">Email Adress</FormLabel>
             <Input
+             height="30px"
+             width="300px"
+             marginLeft="20%"
               focusBorderColor="RGBA(0, 0, 0, 0.64)"
               id="email"
               type="email"
@@ -99,8 +106,12 @@ export const Login = () => {
               }}
             />
             {/* Password ................................ */}
+          
             <FormLabel htmlFor="Password">Password</FormLabel>
             <Input
+             height="30px"
+             width="300px"
+             marginLeft="20%"
               type="password"
               id="password"
               focusBorderColor="RGBA(0, 0, 0, 0.64)"
@@ -113,7 +124,8 @@ export const Login = () => {
 
             <Button
               mt="20px"
-              w="100%"
+              height="40px"
+        width="300px"
               borderColor="#ccd0d5"
               colorScheme="RGBA(0, 0, 0, 0.92)"
               _focus={{
@@ -122,7 +134,7 @@ export const Login = () => {
               }}
               transform="scale(0.98)"
               background="#000000"
-              width="200px"
+             
               _hover={{
                 bg: "#f5f6f7",
                 background: "RGBA(0, 0, 0, 0.80)",
@@ -162,7 +174,7 @@ export const Login = () => {
             </Button> */}
           </FormControl>
         </Flex>
-      
+    
     </div>
   );
 };

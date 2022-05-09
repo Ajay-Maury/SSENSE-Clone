@@ -14,17 +14,13 @@ export const Womenswear = () => {
     const [data,setData] = useState([])
     useEffect (()=>{
         axios.get("https://ssense-api.herokuapp.com/womensWear").then(({data})=>{
-            // console.log(data)
+           
             setData(data.womensWear)
         })
     },[])
-  
-
     
     const handleSort = (e) => {
-       // console.log(e)
-       
-        
+     
         let data2 = data.sort((a, b) => {
         
         if (e === 'lowest')
@@ -38,7 +34,6 @@ export const Womenswear = () => {
       
     }
    
-
   return (
     <div>
         <Navbar />

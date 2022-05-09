@@ -29,7 +29,7 @@ const Card1 = styled.div`
     margin-top:1%;
     color:gray;
 //    border:1px solid red;
-   margin-left:-5%
+   padding-left:-5%
 }
 
 `

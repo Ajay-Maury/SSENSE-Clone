@@ -14,7 +14,7 @@ export const WomenDetails = () => {
     addItem(women,1);
 
   }
-  console.log("getItems",items);
+  // console.log("getItems",items);
    localStorage.setItem("Items",JSON.stringify(items))
   const getData = async () => {
     
