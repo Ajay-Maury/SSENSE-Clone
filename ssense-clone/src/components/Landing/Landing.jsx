@@ -3,14 +3,14 @@ import styled from 'styled-components'
 import Twoimage from './Twoimage'
 import Threeimage from './Threeimage'
 import Twoimage1 from './Twoimage1'
-import Articles from '../Articles/Articles'
+import Articles from './Components/Articles/Articles'
 import Twoimage2 from './Twoimage2'
 import Threeimage1 from './Threeimage1'
 import EightdivGallery from './EightdivGallery'
 import Twoimage3 from './Twoimage3'
 import Threeimage2 from './Threeimage2'
-import Navbar from '../Navbar/Navbar'
-import Footer from "../Footer/Footer"
+import Navbar from './Components/Navbar/Navbar'
+import Footer from "./Components/Footer/Footer"
 const Fourthdiv= styled.div`
    margin-top:1%;
    img{
