@@ -16,7 +16,9 @@
     "react-use-cart": "^1.13.0",
     "redux": "^4.2.0",
     "styled-components": "^5.3.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@chakra-ui/react": "^1.8.8"
+
   },
   "scripts": {
     "start": "react-scripts start",

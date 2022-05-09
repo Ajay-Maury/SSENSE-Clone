@@ -14,7 +14,7 @@ const Articles = () => {
         <div className="medium-articles">
           <div>
             <img
-              style={{ height: "140%", width:"100%"  }}
+              style={{ height: "120%", width:"100%"  }}
               src="https://res.cloudinary.com/ssenseweb/image/upload/w_0.1,q_40,f_auto,dpr_auto/v1649083432/kon1zled3j9pkniq6omt.jpg"
               alt=""
             />
@@ -25,7 +25,7 @@ const Articles = () => {
               Collection
             </h3>
           </div>
-          <Label> FASHION | APR 6</Label>
+          <Label style={{marginLeft:"-10%"}}> FASHION | APR 6</Label>
         </div>
         <div className="small-articles">
          <SmallArticleGallery/>

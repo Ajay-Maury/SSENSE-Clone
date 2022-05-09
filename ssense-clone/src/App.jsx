@@ -7,8 +7,8 @@ import { Everything } from "./Components/products/everything";
 import { Routes, Route } from "react-router-dom";
 
 import { Checkout } from "./Components/checkout/CheckOut";
-// import { Login } from './components/login/login'
-// import {Register} from "./components/register/register"
+import { Login } from './Components/login'
+import {Register} from "./Components/register"
 import {MenDetails}from "./Components/products/MenDetails";
 import {WomenDetails} from "./Components/products/WomenDetails";
 import {EveryDetails} from "./Components/products/EveryDetails";
@@ -24,8 +24,8 @@ function App() {
         <Route path="/Womenswear" element={<Womenswear />} />
         <Route path="/everything" element={<Everything />} />
         <Route path="/checkout" element={<Checkout />} />
-        {/* <Route path="/login" element={<Login/>}></Route>
-        <Route path="/register" element={<Register/>}></Route> */}
+        <Route path="/login" element={<Login/>}></Route>
+        <Route path="/register" element={<Register/>}></Route>
       <Route path="/menswear/:id" element={<MenDetails/>}></Route>
          <Route path="/womenswear/:id" element={<WomenDetails/>}></Route>
         <Route path="/everything/:id" element={<EveryDetails/>}></Route>

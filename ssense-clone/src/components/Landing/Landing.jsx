@@ -15,7 +15,7 @@ const Fourthdiv= styled.div`
    margin-top:1%;
    img{
     height:95%;
-    width:95%;
+    width:96%;
  
     
 }
@@ -64,7 +64,7 @@ const Landing = (props) => {
             <Articles/>
             <Twoimage2/>
             <Sixthdiv>
-                <h1 >BEST! PARTY! EVER!</h1>
+                <h1 >BEST! PARTY! EVER!</h1><br/>
                 <h3>A Night Out With Honey Dijon, Devan Diaz, and Leilah Weinraub</h3>
                 <p className='link'>View Editorial</p>
             </Sixthdiv>

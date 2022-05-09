@@ -28,10 +28,11 @@ img{
 .desc{
     font: lighter normal 0.72rem/1.625rem "JHA Times Now";
     letter-spacing: -0.003125rem;
-    margin-left:21%;
+    margin-left:-5%;
     margin-bottom:3%;
     margin-top:1%;
     color:gray;
+    // border:1px solid red;
 }
 
 `

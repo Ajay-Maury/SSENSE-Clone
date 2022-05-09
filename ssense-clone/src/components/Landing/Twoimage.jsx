@@ -28,7 +28,8 @@ const Card1 = styled.div`
     margin-bottom:3%;
     margin-top:1%;
     color:gray;
-    margin-left:5%;
+//    border:1px solid red;
+   margin-left:-5%
 }
 
 `

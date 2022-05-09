@@ -3,13 +3,15 @@
     height: 22px;
     margin: auto;
     margin-top: 1%;
+    
 }
 .checkoutTab{
-    margin-left:4%;
+    padding-left:4%;
     display: grid;
     margin-top: 2%;
     grid-template-columns: 60% 35%;
     gap:15px;
+    /* border: 1px solid red; */
 }
 /* .checkoutTab>div{
     border: 1px solid green;
@@ -17,20 +19,23 @@
 
 } */
 .checkoutTopTitle{
-    width: 70px;
+    width: fit-content;
     height: 20px;
     font-size: 11px;
     text-align: left;
+    /* border: 1px solid red; */
 }
 .shippingHead{
     width: 370px;
     height: 20px;
     font-size: 11px;
     text-align: left;
+    
 }
 .addressHolder{
     display: flex;
     flex-direction: column;
+    
 }
 /* .addressHolder>div{
     border: 1px solid blue;
@@ -40,21 +45,26 @@
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
     height: 80px;
+    
 }
 .fillDetails>div{
     /* border: 1px solid red;  */
     display: flex;
     flex-direction:column;
     margin-bottom:3%;
+    
 }
 .fillDetails>div>input{
     border:1px solid grey;
+    
 }
+
 .shippingmethod{
     width: 370px;
     height: 20px;
     font-size: 11px;
     text-align: left;
+    /* border: 1px solid red; */
 }
 .shippingbox{
    /* border:1px solid red; */
@@ -78,12 +88,14 @@
     display: flex;
     justify-content:flex-start;
     margin-top: 5px;
+    
 }
 .footer{
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 11px;
+    
 }
 .footer>div{
     margin-right: 5%;
@@ -93,14 +105,16 @@
     font-size: 11px;
     margin-top: 5%;
     text-align: left;
+    
 }
-.productChoosed{
-    /* border:1px solid green; */
-}
+/* .productChoosed{
+    /* border:1px solid green; 
+} */
 .total>div{
     display: flex;
     justify-content: space-between;
     font-size: 11px;
+    
 }
 .orderTotal{
     display: flex;
@@ -113,18 +127,25 @@
     background-color: black;
     color: white;
     height: 30px;
+    margin-left: -15%;
+    
 }
 .cardImage{
-    width:30%;
-    height:30%;
+    width:15%;
+    height:15%;
+    margin-bottom: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* border: 1px solid red; */
 }
 
 .cartDiv{
     display:flex;
     justify-content: space-around;
-
+    
+    border-bottom: 1px solid gray;
 }
 .cardDiv>div>p{
     font-size: 20px;
     text-align: center;
+    /* border: 1px solid red; */
 }

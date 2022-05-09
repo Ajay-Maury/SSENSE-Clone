@@ -176,8 +176,8 @@ export const Checkout=()=>{
                            return (
                             <div className="cartDiv" key={e.id}>
                                 <img src={e.img_url} alt="miss" className="cardImage"/>
-                                <div style={{marginTop:"80px"}}><h5>{e.product}</h5>
-                                    <p>{e.price}</p></div>
+                                <div style={{marginTop:"10px"}}><h5>{e.product}</h5>
+                                    <p>$ {e.price}</p></div>
                                 
                             </div>
                            )
@@ -189,7 +189,7 @@ export const Checkout=()=>{
                     <div className="total">
                         <div>
                             <p>Subtotal</p>
-                            <p>{sum}</p>
+                            <p>$ {sum}</p>
                         </div>
                         <div>
                             <p>Shippingtotal</p>
@@ -201,7 +201,7 @@ export const Checkout=()=>{
                     </div>
                     <div className="orderTotal">
                         <p>Ordertotal(USD)</p>
-                        <p>{sum}</p>
+                        <p>$ {sum}</p>
                     </div>
                     <div >
                         <p style={{fontSize:"11px", textAlign:"left"}}>
